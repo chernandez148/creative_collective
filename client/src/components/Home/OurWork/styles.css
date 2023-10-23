@@ -46,6 +46,10 @@
 
 @media(max-width: 400px) {
     .our-work-wrapper {
-        margin: 0 1.5rem;
+        margin: 0 2rem;
+    }
+
+    .OurWork img {
+        width: 350px;
     }
 }
