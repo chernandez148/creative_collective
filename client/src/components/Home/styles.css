@@ -1,0 +1,14 @@
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-image: url('../../assets/hero-bg9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-wrapper {
+    transition: opacity 1s ease-in-out;
+
+}
