@@ -1,0 +1,40 @@
+.Navbar {
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.Navbar nav {
+    padding: 1.5rem
+}
+
+.Navbar ul {
+    padding: 0;
+    display: flex;
+}
+
+.Navbar li {
+    list-style-type: none;
+    margin: 0 .75rem;
+    color: #787a7a;
+}
+
+.Navbar button {
+    display: none;
+}
+
+@media(max-width: 400px) {
+    .Navbar ul {
+        display: none;
+    }
+
+    .Navbar button {
+        display: block;
+        border: 0;
+        background-color: transparent;
+    }
+}
