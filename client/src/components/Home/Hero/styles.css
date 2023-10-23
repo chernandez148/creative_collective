@@ -119,6 +119,14 @@
     transition: height 1s ease-in-out;
 }
 
+@media (max-width: 600px) {
+    
+.vertical-line {
+    border-left: 12px solid #9cbdb626;
+    border-right: 3px solid #9cbdb626;
+    }
+}
+
 @media(max-width: 400px) {
     .Hero {
         padding: 4rem;   
