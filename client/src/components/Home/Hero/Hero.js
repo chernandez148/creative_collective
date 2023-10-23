@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import image1 from '../../../assets/hero-image-1.gif'
 import image2 from '../../../assets/hero-image-2.jpg'
+import bg from '../../../assets/riverside-bg.jpg'
 import './styles.css'
 
 function Hero() {
-    const [horizontalLine, setHorizontalLine] = useState(false)
+    const [verticalLine, setVerticalLine] = useState(false)
 
     useEffect(() => {
         setTimeout(() => {
-            setHorizontalLine(true);
+            setVerticalLine(true);
         }, 3500);
 
     }, []);
@@ -18,19 +19,22 @@ function Hero() {
             <div className='hero-wrapper'>
                 <div className='hero-left'>
                     <div className='square-center'><h6>CREATIVE COLLECTIVE</h6></div>
-                    <div className='square-top-left-one'></div>
-                    <div className='square-top-left-two'></div>
-                    <div className='square-bottom-left-one'></div>
-                    <div className='square-bottom-left-two'></div>
-                    <div className='square-top-right-one'></div>
-                    <div className='square-top-right-two'></div>
-                    <div className='square-bottom-right-one'></div>
-                    <div className='square-bottom-right-two'></div>
+                    <div className='square-left-top'></div>
+                    <div className='square-left-center'></div>
+                    <div className='square-left-bottom'></div>
                 </div>
-                <div className='hero-right'></div>
+                <div className='hero-right'>
+                    <div className='title'>
+                        <h2>We are a digital marketing and website design agency.</h2>
+                        <p>
+                            Based in sunny Southern California, dedicated to turning your online aspirations into exceptional realities.
+                        </p>
+                        <h1 className='background-text-bottom'>Where your artistic vision becomes a reality.</h1>
+                    </div>
+                </div>
             </div>
-            <div className='horizontal-wrapper'>
-                <div className={`horizontal-line ${horizontalLine ? "w-100" : "w-0"}`}></div>
+            <div className='vertical-wrapper'>
+                <div className={`vertical-line ${verticalLine ? "h-100" : "h-0"}`}></div>
             </div>
 
         </div>
@@ -39,11 +43,3 @@ function Hero() {
 
 export default Hero
 
-{/* <div className='title'>
-                    <h2>We are a digital marketing and website design agency.</h2>
-                    <p>
-                        Based in sunny Southern California, dedicated to turning your online <br /> aspirations into exceptional realities.
-                    </p>
-                    <button>Learn More</button>
-                    <h1 className='background-text-bottom'>Where your artistic vision becomes a reality.</h1>
-                </div> */}
