@@ -3,6 +3,13 @@ import website1 from "../../../assets/website-1.png";
 import "./styles.css";
 
 function OurWork() {
+  const gallery = [
+    { image: website1, alt: "our work 1" },
+    { image: website1, alt: "our work 1" },
+    { image: website1, alt: "our work 1" },
+    { image: website1, alt: "our work 1" },
+  ];
+
   return (
     <div className="OurWork">
       <div className="our-work-wrapper">
@@ -17,8 +24,16 @@ function OurWork() {
             delivering what people truly want in every online interaction.
           </p>
         </div>
-
-        <img src={website1} />
+        <div className="our-work-images">
+          {gallery.map((image) => (
+            <img key={image.index} src={image.image} alt={image.alt} />
+          ))}
+        </div>
+        <div className="image-carousel">
+          {gallery.map((image) => (
+            <img key={image.index} src={image.image} alt={image.alt} />
+          ))}
+        </div>
       </div>
     </div>
   );

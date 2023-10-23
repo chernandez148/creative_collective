@@ -35,21 +35,47 @@
 .OurWork img {
     box-shadow: 0 0 8px #00000054;
     border-radius: 12px;
-    width: 350px;
+    margin: 0 1rem;
+}
+
+.image-carousel {
+    display: none;
+}
+
+@media(min-width: 1000px) {
+    .OurWork img {
+        width: calc(25% - 2rem);
+    }
+}
+
+@media(max-width: 1000px) {
+    .OurWork img {
+        width: calc(50% - 2rem);
+        margin: 1rem;
+    }
 }
 
 @media(max-width: 630px) {
     .OurWork p {
-        width: 100%;
+        width: 100%!important;
+    }
+
+    .our-work-images {
+        display: none;
+    }
+
+    .image-carousel {
+        display: inherit;
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 425px) {
     .our-work-wrapper {
         margin: 0 1.5rem;
     }
 
     .OurWork img {
         width: 100%;
+        margin: 0;
     }
 }
