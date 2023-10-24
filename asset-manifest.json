@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/creative_collective/static/css/main.459e8bbb.css",
-    "main.js": "/creative_collective/static/js/main.593261db.js",
+    "main.js": "/creative_collective/static/js/main.1692b8c7.js",
     "static/media/website-3.png": "/creative_collective/static/media/website-3.7a41e6bdbd5fb4475969.png",
     "static/media/web-design.jpg": "/creative_collective/static/media/web-design.6b91e932727ba7de40e3.jpg",
     "static/media/website-4.png": "/creative_collective/static/media/website-4.340bf7436bb7850a1aef.png",
@@ -9,7 +9,11 @@
     "static/media/website-1.png": "/creative_collective/static/media/website-1.c901fc089c67bedc6681.png",
     "static/media/team-bg.jpg": "/creative_collective/static/media/team-bg.b938077c0ef8b99e95e6.jpg",
     "static/media/hero-bg9.jpg": "/creative_collective/static/media/hero-bg9.af5089ed152df2f26d9b.jpg",
+    "static/media/mobile-development.png": "/creative_collective/static/media/mobile-development.776d6519739e27b5169e.png",
+    "static/media/branding.png": "/creative_collective/static/media/branding.4424247a7b2bb8823efa.png",
+    "static/media/web-hosting.jpg": "/creative_collective/static/media/web-hosting.e918bbcdf63a7f72b9c3.jpg",
     "static/media/juan.jpg": "/creative_collective/static/media/juan.9d3de2eeb994b30d7b5f.jpg",
+    "static/media/wordpress.png": "/creative_collective/static/media/wordpress.e40a1d3216e31e21dc74.png",
     "static/media/christian.jpeg": "/creative_collective/static/media/christian.c12c5a6cbabc9fbaea97.jpeg",
     "static/media/saki.jpeg": "/creative_collective/static/media/saki.222e6e4ca0dcab960cd5.jpeg",
     "static/media/collin.jpeg": "/creative_collective/static/media/collin.359c8a24a832f6de5072.jpeg",
@@ -18,10 +22,10 @@
     "static/media/graphic-design.webp": "/creative_collective/static/media/graphic-design.7cae60d8e6a05169b1e0.webp",
     "index.html": "/creative_collective/index.html",
     "main.459e8bbb.css.map": "/creative_collective/static/css/main.459e8bbb.css.map",
-    "main.593261db.js.map": "/creative_collective/static/js/main.593261db.js.map"
+    "main.1692b8c7.js.map": "/creative_collective/static/js/main.1692b8c7.js.map"
   },
   "entrypoints": [
     "static/css/main.459e8bbb.css",
-    "static/js/main.593261db.js"
+    "static/js/main.1692b8c7.js"
   ]
 }
