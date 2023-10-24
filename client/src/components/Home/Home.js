@@ -5,6 +5,7 @@ import OurWork from "./OurWork/OurWork";
 import Team from "./Team/Team";
 import Design from "./Design/Design";
 import Services from "./Services/Services";
+import Contact from "./Contact/Contact";
 
 function Home({ opacity }) {
   return (
@@ -14,6 +15,7 @@ function Home({ opacity }) {
       <Team opacity={opacity} />
       <Design opacity={opacity} />
       <Services opacity={opacity} />
+      <Contact opacity={opacity} />
     </div>
   );
 }

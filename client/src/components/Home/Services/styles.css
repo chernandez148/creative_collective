@@ -12,12 +12,98 @@
 .Services p {
     width: 600px;
     font-size: 14px;
-    text-align: center;
     color: #272727;
     line-height: 25px;
+    margin: 1.5rem auto;
+    text-align: center;
 }
 
-.service-image {}
+.services-list {
+    margin-top: 1rem;
+}
+
+.service-card {
+    overflow-y: hidden;
+}
+
+.service-card h4 {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 2;
+}
+
+.service-card button {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.service-card .button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.service-card button svg {
+    margin-right: 1rem;
+}
+
+.service-card p {
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin: 1rem;
+}
+
+.service-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.servicess-title {
+    margin-top: .75rem;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    z-index: 1;
+}
+
+.Services .call-now {
+    display: flex;
+    margin: 1.5rem auto;
+    margin-bottom: 0;
+    padding: .75rem 1rem;
+    border: 2px solid #5e7f7d;
+    background-color: #5e7f7d;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
+.Services .call-now:hover {
+    border: 2px solid #5e7f7d;
+    background-color: white;
+    color: #5e7f7d;
+    cursor: pointer;
+}
+
+@media(min-width: 600px) {
+    .services-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 @media(max-width: 630px) {
     .Services {
@@ -27,11 +113,5 @@
     .Services p {
         width: calc(100% - 2rem);
         margin: .5rem 1rem;
-    }
-}
-
-@media(max-width: 450px) {
-    .Services h1 {
-        margin: 0 1rem;
     }
 }
