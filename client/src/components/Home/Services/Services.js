@@ -15,6 +15,8 @@ function Services({ opacity }) {
             setImageIndex(index)
         } else if (imageIndex === index) {
             setImageIndex(null)
+        } else {
+            setImageIndex(index)
         }
     }
 
@@ -33,7 +35,7 @@ function Services({ opacity }) {
                     {services.map((service, index) => (
                         <div className='service-card'>
                             <button onClick={() => retrieveIndex(index)}>{service.name}</button>
-                            <img className={`service-image ${imageIndex === index ? "h-100" : "h-0"}`} src={service.image} width="100%" />
+                            <img className={`service-image ${imageIndex === index ? "h-100 w-100" : "h-0"}`} src={service.image} />
                         </div>
                     ))}
                 </div>

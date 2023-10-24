@@ -17,9 +17,7 @@
     line-height: 25px;
 }
 
-.service-image {
-    transition: height 1s ease-in-out;
-}
+.service-image {}
 
 @media(max-width: 630px) {
     .Services {
