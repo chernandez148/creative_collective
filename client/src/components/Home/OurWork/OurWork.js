@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import website1 from "../../../assets/website-1.png";
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+
 import "./styles.css";
 
 function OurWork() {
+  const imageRef = useRef(null)
+  const [right, setRight] = useState(0)
+  console.log(imageRef)
+
   const gallery = [
     { image: website1, alt: "our work 1" },
     { image: website1, alt: "our work 1" },
     { image: website1, alt: "our work 1" },
     { image: website1, alt: "our work 1" },
   ];
+
+  const handleTouchMove = () => {
+    const maxRight = imageRef.current.offsetWidth * (gallery.length - 1);
+
+    if (right !== maxRight) {
+      setRight((prevRight) => prevRight + imageRef.current.offsetWidth);
+    } else if (right === maxRight) {
+      setRight(0)
+    }
+    console.log(maxRight, right)
+
+  };
+
+
 
   return (
     <div className="OurWork">
@@ -25,14 +45,20 @@ function OurWork() {
           </p>
         </div>
         <div className="our-work-images">
-          {gallery.map((image) => (
-            <img key={image.index} src={image.image} alt={image.alt} />
-          ))}
-        </div>
-        <div className="image-carousel">
-          {gallery.map((image) => (
-            <img key={image.index} src={image.image} alt={image.alt} />
-          ))}
+          <button><AiOutlineLeft /></button>
+          <div
+            ref={imageRef}
+            className="carousel-wrapper">
+            {gallery.map((image, index) => (
+              <img
+                style={{ right: `${right}px` }}
+                key={index}
+                src={image.image}
+                alt={image.alt}
+              />
+            ))}
+          </div>
+          <button onClick={handleTouchMove}><AiOutlineRight /></button>
         </div>
       </div>
     </div>

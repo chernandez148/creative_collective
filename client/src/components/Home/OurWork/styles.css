@@ -38,7 +38,7 @@
     margin: 0 1rem;
 }
 
-.image-carousel {
+.OurWork button {
     display: none;
 }
 
@@ -57,25 +57,37 @@
 
 @media(max-width: 630px) {
     .OurWork p {
-        width: 100%!important;
-    }
-
-    .our-work-images {
-        display: none;
-    }
-
-    .image-carousel {
-        display: inherit;
+        width: 100% !important;
     }
 }
 
 @media(max-width: 425px) {
     .our-work-wrapper {
-        margin: 0 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .our-work-images {
+        display: flex;
+        align-items: center;
+    }
+
+    .carousel-wrapper {
+        display: flex;
+        position: relative;
+        overflow-x: hidden;
     }
 
     .OurWork img {
-        width: 100%;
-        margin: 0;
+        width: calc(100% - 2rem);
+        margin: 1rem;
+        position: relative;
+        transition: right .5s ease-in-out;
+
+    }
+
+    .OurWork button {
+        display: block;
+        border: 0;
+        background-color: transparent;
     }
 }
