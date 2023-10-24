@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/creative_collective/static/css/main.459e8bbb.css",
-    "main.js": "/creative_collective/static/js/main.1692b8c7.js",
+    "main.css": "/creative_collective/static/css/main.b84312e6.css",
+    "main.js": "/creative_collective/static/js/main.e1699763.js",
     "static/media/website-3.png": "/creative_collective/static/media/website-3.7a41e6bdbd5fb4475969.png",
     "static/media/web-design.jpg": "/creative_collective/static/media/web-design.6b91e932727ba7de40e3.jpg",
     "static/media/website-4.png": "/creative_collective/static/media/website-4.340bf7436bb7850a1aef.png",
@@ -21,11 +21,11 @@
     "static/media/digital-marketing.webp": "/creative_collective/static/media/digital-marketing.7b49c971907e9ecad9f1.webp",
     "static/media/graphic-design.webp": "/creative_collective/static/media/graphic-design.7cae60d8e6a05169b1e0.webp",
     "index.html": "/creative_collective/index.html",
-    "main.459e8bbb.css.map": "/creative_collective/static/css/main.459e8bbb.css.map",
-    "main.1692b8c7.js.map": "/creative_collective/static/js/main.1692b8c7.js.map"
+    "main.b84312e6.css.map": "/creative_collective/static/css/main.b84312e6.css.map",
+    "main.e1699763.js.map": "/creative_collective/static/js/main.e1699763.js.map"
   },
   "entrypoints": [
-    "static/css/main.459e8bbb.css",
-    "static/js/main.1692b8c7.js"
+    "static/css/main.b84312e6.css",
+    "static/js/main.e1699763.js"
   ]
 }
