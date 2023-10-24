@@ -1,6 +1,6 @@
 .Hero {
     width: 100%;
-    height: 100svh;  
+    height: 100svh;
     background-image: url('../../../assets/hero-bg9.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -120,10 +120,10 @@
 }
 
 @media (max-width: 600px) {
-    
-.vertical-line {
-    border-left: 12px solid #9cbdb626;
-    border-right: 3px solid #9cbdb626;
+
+    .vertical-line {
+        border-left: 12px solid #9cbdb626;
+        border-right: 3px solid #9cbdb626;
     }
 }
 
@@ -135,5 +135,12 @@
 
     .title p {
         padding: .5rem 0;
+    }
+}
+
+@media(max-height: 550px) {
+    .Hero {
+        height: initial;
+        padding: 6rem 0;
     }
 }

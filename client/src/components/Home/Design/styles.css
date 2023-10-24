@@ -1,0 +1,42 @@
+.Design {
+    position: relative;
+    bottom: 100px;
+}
+
+.Design h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #5e7f7d;
+}
+
+.Design p {
+    width: 600px;
+    font-size: 14px;
+    text-align: center;
+    color: #272727;
+    line-height: 25px;
+}
+
+.Design span {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding: 1rem 0;
+}
+
+@media(max-width: 630px) {
+    .Design {
+        padding: 0;
+    }
+
+    .Design p {
+        width: calc(100% - 2rem);
+        margin: .5rem 1rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .Design h1 {
+        margin: 0 1rem;
+    }
+}

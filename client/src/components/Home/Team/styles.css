@@ -1,0 +1,90 @@
+.Team {
+    width: 100%;
+}
+
+.team-title {
+    background-image: url('../../../assets/team-bg.jpg');
+    padding: 15rem 0;
+    background-position: top;
+    background-size: cover;
+}
+
+
+.team-title h1 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    text-shadow: 0 0 20px black;
+}
+
+.team {
+    display: flex;
+    position: relative;
+    bottom: 150px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team div {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(250px - 1rem);
+    padding: 1rem 0.5rem;
+}
+
+.team img {
+    width: 250px;
+    filter: grayscale(.8);
+}
+
+.team .info {
+    background-color: #efefef;
+    display: flex;
+    align-items: flex-start;
+}
+
+.info p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.info hr {
+    width: 101%;
+    text-align: start;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.75rem 0;
+}
+
+.info .about {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.info ul {
+    padding: 0;
+    margin-bottom: .5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.info li {
+    list-style-type: none;
+    margin: 0 .5rem;
+    padding: .5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+@media(max-width: 400px) {
+    .mobile-bg {
+        transform: scale(2);
+    }
+
+    .team-title {
+        padding: 10rem 0;
+    }
+}

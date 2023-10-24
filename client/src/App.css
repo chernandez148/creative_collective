@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 
 .App {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .h-0 {
@@ -34,6 +34,18 @@
 
 .opacity-0 {
   opacity: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-initial {
+  display: initial;
 }
 
 .top-minus-9999 {

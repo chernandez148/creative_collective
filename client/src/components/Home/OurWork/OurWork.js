@@ -1,19 +1,22 @@
 import React, { useRef, useState } from "react";
 import website1 from "../../../assets/website-1.png";
+import website2 from "../../../assets/website-2.png";
+import website3 from "../../../assets/website-3.png";
+import website4 from "../../../assets/website-4.png";
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 
 import "./styles.css";
 
-function OurWork() {
+function OurWork({ opacity }) {
   const imageRef = useRef(null)
   const [right, setRight] = useState(0)
   console.log(imageRef)
 
   const gallery = [
     { image: website1, alt: "our work 1" },
-    { image: website1, alt: "our work 1" },
-    { image: website1, alt: "our work 1" },
-    { image: website1, alt: "our work 1" },
+    { image: website2, alt: "our work 2" },
+    { image: website3, alt: "our work 3" },
+    { image: website4, alt: "our work 4" },
   ];
 
   const handleTouchMove = () => {
@@ -31,8 +34,8 @@ function OurWork() {
 
 
   return (
-    <div className="OurWork">
-      <div className="our-work-wrapper">
+    <div className={`OurWork ${opacity ? "opacity-0 d-none" : "opacity-1 d-flex"}`}>
+      <div className={`our-work-wrapper ${opacity ? "opacity-0 d-none" : "opacity-1 d-flex"}`}>
         <div className="our-work-title">
           <h1>
             Putting People First: Our Unique Approach to Digital Marketing
@@ -60,6 +63,7 @@ function OurWork() {
           </div>
           <button onClick={handleTouchMove}><AiOutlineRight /></button>
         </div>
+        <button className="call-now">Free Quote</button>
       </div>
     </div>
   );
