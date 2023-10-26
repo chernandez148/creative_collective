@@ -10,7 +10,7 @@ function Design({ opacity }) {
                         Designing with Your Vision in Mind
                     </h1>
                     <p>
-                        At 'Creative Collective,' we turn your concepts into stunning designs that resonate with your audience. Our team blends creativity and functionality to create meaningful, impactful visuals that meet your goals.
+                        At Quirk & Quill Studios we turn your concepts into stunning designs that resonate with your audience. Our team blends creativity and functionality to create meaningful, impactful visuals that meet your goals.
                     </p>
                     <span>(Juan's designs here)</span>
                 </div>

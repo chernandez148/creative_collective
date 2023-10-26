@@ -21,7 +21,7 @@ function Hero({ opacity }) {
             <div className="square-center-bottom"></div>
           </div>
           <div className="square-center">
-            <h6>CREATIVE COLLECTIVE</h6>
+            <h6>QUIRK & QUILL STUDIOS</h6>
           </div>
         </div>
         <div className="hero-bottom">

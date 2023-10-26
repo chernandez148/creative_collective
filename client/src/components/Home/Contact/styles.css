@@ -12,10 +12,20 @@
 .contact-banner {
     height: 500px;
     width: 100lvw;
-    background-image: url('../../../assets/contact-banner.jpg');
+    background-image: url('../../../assets/contact-bg-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-banner h1 {
+    text-align: center;
+    color: #647f7d;
+    font-size: 28px;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
 }
 
 .contact-wrapper {
@@ -68,7 +78,7 @@
 
 .form-container {
     background-color: white;
-    padding: 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,11 +87,21 @@
 .form-container h1 {
     padding: 1rem;
     padding-top: 0;
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
-    border-bottom: 1px solid #647f7d;
+    border-bottom: 1px solid #dbdbdb;
     color: #647f7d;
     width: 100%;
+}
+
+.form-container img {
+    margin-top: 3rem;
+}
+
+.form-container p {
+    line-height: 28px;
+    padding: 1rem 0;
+    color: #292929;
 }
 
 input {
@@ -99,10 +119,16 @@ form input:first-child {
 
 form textarea {
     margin: .5rem 0;
+    padding: .75rem;
 }
 
 form button {
     padding: .65rem;
+    border-color: #647f7d;
+    background-color: #617f7d;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
 }
 
 @media(min-width: 1280px) {
@@ -118,12 +144,20 @@ form button {
     }
 
     .form-container {
-        width: 600px !important;
+        width: 700px !important;
         flex-direction: row;
         justify-content: center;
         position: relative;
         flex-wrap: wrap;
         right: 10px;
+    }
+
+    .form-container img {
+        margin-top: 0;
+    }
+
+    .form-container p {
+        width: 350px;
     }
 
     form {
@@ -161,6 +195,11 @@ form button {
 
     .form-container form {
         width: 100%;
+    }
+
+    .form-container button {
+        margin: 0 auto;
+        display: flex;
     }
 }
 

@@ -77,7 +77,7 @@ function Services({ opacity }) {
             icon: <SiWebmoney size={24} />,
             image: webhosting,
             description:
-                "At Creative Collection, we bring you top-notch hosting solutions backed by Bluehost's proven infrastructure. Experience seamless website performance, 24/7 expert support, and advanced security features, all powered by Bluehost. With us, your online presence is in safe hands, ensuring your website runs smoothly while you focus on growing your business.",
+                "At Quirk & Quill Studios, we bring you top-notch hosting solutions backed by Bluehost's proven infrastructure. Experience seamless website performance, 24/7 expert support, and advanced security features, all powered by Bluehost. With us, your online presence is in safe hands, ensuring your website runs smoothly while you focus on growing your business.",
         },
         {
             id: 7,
@@ -149,7 +149,7 @@ function Services({ opacity }) {
                         </div>
                     ))}
                 </div>
-                <button className="call-now">Learn More</button>
+                <a href="tel:+19095015252"><button className="call-now">Learn More</button></a>
             </div>
         </div>
     );

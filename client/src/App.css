@@ -74,6 +74,18 @@ h6 {
   margin: 0;
 }
 
+input,
+textarea {
+  overflow: visible;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  box-shadow: 0 0 3px #00000024;
+}
+
+a {
+  text-decoration: none;
+}
+
 @media(min-width: 600px) {
   .w-md-50 {
     width: 50%;

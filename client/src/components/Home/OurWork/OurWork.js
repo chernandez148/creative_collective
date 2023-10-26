@@ -63,7 +63,7 @@ function OurWork({ opacity }) {
           </div>
           <button onClick={handleTouchMove}><AiOutlineRight /></button>
         </div>
-        <button className="call-now">Free Quote</button>
+        <a href="tel:+19095015252"><button className="call-now">Call For Free Quote</button></a>
       </div>
     </div>
   );
